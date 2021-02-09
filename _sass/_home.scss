@@ -1,0 +1,94 @@
+
+html,
+body {
+  height: 100%;
+}
+#page-content {
+  flex: 1 0 auto;
+}
+footer {
+  flex-shrink: none;
+  font-size: 14px;
+}
+
+.navbar {
+  background: #fff;
+  color: #333;
+
+  .navbar-brand {
+    font-size: 1.5rem;
+    height: 60px;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  .nav-item {
+    .nav-link {
+      color: #444;
+      padding-right: 1rem;
+
+      &:hover {
+        color: $color2;
+        font-weight: 600;
+      }
+    }
+  }
+  .nav-item.active .nav-link {
+    color: $color2;
+    font-weight: 600;
+  }
+
+  .nav-item .dropdown-menu {
+    background: $color2;
+    border: transparent;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    a {
+      padding: 5px 30px;
+      color: #fff;
+
+      &:hover {
+        background-color: $color2;
+        font-weight: 800;
+      }
+    }
+  }
+}
+
+.banner {
+  padding: 10rem 0 9rem 0;
+  background: url($image_base_url + "/banner.jpg");
+  background-position: top center;
+  position: relative;
+  background-size: cover;
+  height: 100vh;
+
+  .welcome {
+    z-index: 100 !important;
+    h1 {
+      font-size: 60px;
+      font-weight: 600;
+      color: #fff;
+    }
+  }
+  .tagline {
+    width: 70%;
+    margin: auto;
+
+    h3 {
+      color: #eee;
+      font-size: 24px;
+      font-style: italic;
+    }
+    p {
+      font-size: 1.2rem;
+      color: #ddd;
+    }
+  }
+  .fa-hands-helping {
+    color: $color2;
+  }
+}

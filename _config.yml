@@ -1,0 +1,22 @@
+title: Vriksha Foundation
+email: info@vrikshafoundation.org
+description: >-
+  A non-profit organization from Nepal working on transforming underused or vacant plots into urban parks.
+  We aim to create networks of green spaces to lead changes with the way we design, think and act.
+baseurl: ""
+url: "https://vrikshafoundation.org"
+image_base_url: /assets/img # ending without forward slash
+
+future: true # Show blog post of future date
+permalink: /blogs/:year/:month/:day/:title/
+
+include: ["_pages"]
+google_analytics:
+
+sass:
+  style: compressed
+
+# Build settings
+markdown: kramdown
+# plugins:
+#   - jekyll-feed

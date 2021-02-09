@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand font-weight-bold text-white" href="/">
+      <img src="/assets/img/logo.png" alt="Logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto text-center">
+        <li class="nav-item {% if page.page_name == 'home' %}active{% endif %}">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item {% if page.page_name == 'about' %}active{% endif %}">
+          <a class="nav-link" href="/#">About</a>
+        </li>
+        <li class="nav-item {% if page.page_name == 'manifesto' %}active{% endif %}">
+          <a class="nav-link" href="/#">Manifesto</a>
+        </li>
+        <li class="nav-item {% if page.page_name == 'what-we-do' %}active{% endif %}">
+          <a class="nav-link" href="/#">Projects</a>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown mt-0">
+            <a class="dropdown-toggle nav-link{% if page.nav-link-class %} {{ page.nav-link-class }}{% endif %}"
+              type="button" id="dropdownDesigns" data-toggle="dropdown">
+              What We Do
+            </a>
+            <div class="dropdown-menu m-auto text-center" aria-labelledby="dropdownDesigns">
+              <a class="dropdown-item mt-2" href="/#">Guidelines</a>
+              <a class="dropdown-item" href="/#">Dialogues</a>
+              <a class="dropdown-item" href="/#">Community Engagement</a>
+              <a class="dropdown-item" href="/#">Tree Plantation</a>
+              <a class="dropdown-item" href="/#">Public Art</a>
+              <a class="dropdown-item" href="/#">Native Species</a>
+              <a class="dropdown-item mb-2" href="/#">Tactical Urbanism</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
